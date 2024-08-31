@@ -1,4 +1,5 @@
 plugins {
+    id 'io.freefair.lombok' version '8.10'
     id 'java'
 }
 
@@ -10,6 +11,10 @@ repositories {
 }
 
 dependencies {
+    implementation 'com.mysql:mysql-connector-j:9.0.0'
+    implementation 'org.hibernate.orm:hibernate-core:6.6.0.Final'
+    implementation 'p6spy:p6spy:3.9.1'
+
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
